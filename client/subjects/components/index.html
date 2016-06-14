@@ -1,25 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <base href="/">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
-    <title>Artoo Campus - Components</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="ui/appbar/appbar.css">
-  </head>
+
+<head>
+  <base href="/">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <title>Artoo Campus - Components</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="ui/appbar/appbar.css">
+</head>
+
+<body ng-app="artoo">
+  <appbar></appbar>
+
+  <!-- create a component for the filter and order tools -->
+
+  <!-- create a component for the items properties -->
+    
+  <tab-bucato>
+    <div>Test1</div>
+  </tab-bucato>
   
-  <body ng-app="artoo">
-    <appbar></appbar>
-    
-    <!-- create a component for the filter and order tools -->
-    
-    <!-- create a component for the items properties -->
-    
-    <!-- create a component for the items and apply to the armors -->
-    
-    <script src="node_modules/angular/angular.min.js"></script>
-    <script src="ui/appbar/appbar.js"></script>
-    <script src="subjects/components/app.js"></script>
-  </body>
+  <tab-bucato>
+    <ul>
+      <li ng-repeat="i in [0,1,2,3]">{{$index}}</li>
+      
+    </ul>
+  </tab-bucato>
+  
+  <tab-bucato>
+    <div> Test3</div>
+  </tab-bucato>
+  
+  <!--<items></items>-->
+
+  <!-- create a component for the items and apply to the armors -->
+
+  <script src="node_modules/angular/angular.min.js"></script>
+  <script src="ui/appbar/appbar.js"></script>
+  <script src="subjects/components/app.js"></script>
+  <script src="subjects/components/items/items.components.js"></script>
+  <script src="subjects/components/items/items.controller.js"></script>
+  <script src="subjects/components/items/items.service.js"></script>
+  <script src="subjects/components/item/item.component.js"></script>
+  <script src="subjects/components/item/item.controller.js"></script>
+  <script src="subjects/components/tab-bucato.components.js"></script>
+
+</body>
+
 </html>

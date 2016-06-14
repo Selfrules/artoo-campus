@@ -1,33 +1,56 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <base href="/">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
-    <title>Artoo Campus - Angular Material</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="ui/appbar/appbar.css">
-    <!-- load material css -->
-  </head>
+
+<head>
+  <base href="/">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <title>Artoo Campus - Angular Material</title>
+  <link rel="stylesheet" href="node_modules/angular-material/angular-material.min.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="ui/appbar/appbar.css">
+  <!-- load material css -->
+</head>
+
+<body ng-app="artoo">
+  <appbar></appbar>
+
+  <!-- check the typography -->
+
+  <!-- <h1 class="md-title">Prova angular material</h1>
+  <h3 class="md-subhead">Typography test for angular material</h3>
+
+  <button class="md-button md-raised md-warn"> Ciao! Clickami!</button> -->
+
+  <!-- setup a theme -->
+
+  <!--<div layout="column" layout-align="space-around stretch" layout-padding layout-margin layout-fill style="min-height: 100px;">
+    <div flex="20" style="background-color: red;" flex-order="3">
+      <div flex layout-align="center center" style="background-color: blue; height:100px;"></div>
+    </div>
+    <div flex="20" style="background-color: yellow;" flex-order="1">Child#2</div>
+    <div flex="20" style="background-color: blue;" flex-order="4">Child#3</div>
+    <div flex="20" style="background-color: brown;" flex-order="3">Child#4</div>
+  </div>-->
+
+  <!-- practice the layout -->
+
+  <!-- play with some directives & services -->
   
-  <body ng-app="artoo">
-    <appbar></appbar>
-    
-    <!-- check the typography -->
-    
-    <!-- setup a theme -->
-    
-    <!-- practice the layout -->
-    
-    <!-- play with some directives & services -->
-    
-    <script src="node_modules/angular/angular.min.js"></script>
-    <!-- load aria -->
-    <!-- load animation -->
-    <!-- load messages -->
-    <!-- load material -->
-    
-    <script src="ui/appbar/appbar.js"></script>
-    <script src="subjects/material/app.js"></script>
-  </body>
+
+  <script src="node_modules/angular/angular.min.js"></script>
+  <script src="node_modules/angular-aria/angular-aria.min.js"></script>
+  <script src="node_modules/angular-animate/angular-animate.min.js"></script>
+  <script src="node_modules/angular-messages/angular-messages.min.js"></script>
+  <script src="node_modules/angular-material/angular-material.min.js"></script>
+  <script src="subjects/material/date.picker.js"></script>
+  <!-- load aria -->
+  <!-- load animation -->
+  <!-- load messages -->
+  <!-- load material -->
+
+  <script src="ui/appbar/appbar.js"></script>
+  <script src="subjects/material/app.js"></script>
+</body>
+
 </html>
