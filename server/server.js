@@ -51,6 +51,10 @@ app.use('/', express.static(path.join(__dirname, '..', 'client')));
 
 // routers + controllers
 
+app.use(function (req, res, next){
+  console.log('middleware');
+  next();
+});
 // define here your API
 // app.use('/api/items', require('./exercises/items').router);
 

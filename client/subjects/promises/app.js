@@ -1,6 +1,10 @@
 angular.module('artoo', [
-  'appbar',
-])
+    'appbar',
+    'ngResource',
+  ])
   .config((AppbarSrvProvider) => {
-    AppbarSrvProvider.setSubject({name: 'Promises', url: 'subjects/promises'});
+    AppbarSrvProvider.setSubject({
+      name: 'Promises',
+      url: 'subjects/promises'
+    });
   });

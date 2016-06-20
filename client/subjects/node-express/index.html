@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <base href="/">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
-    <title>Artoo Campus - NodeJS + ExpressJS</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="ui/appbar/appbar.css">
-  </head>
-  
-  <body ng-app="artoo">
-    <appbar></appbar>
-    
-    <script src="node_modules/angular/angular.min.js"></script>
-    <script src="ui/appbar/appbar.js"></script>
-    <script src="subjects/node-express/app.js"></script>
-  </body>
+
+<head>
+  <base href="/">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <title>Artoo Campus - NodeJS + ExpressJS</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="ui/appbar/appbar.css">
+</head>
+
+<body ng-app="artoo">
+  <appbar></appbar>
+
+  <div ng-controller="ItemsCtrl">
+  </div>
+
+  <script src="node_modules/angular/angular.min.js"></script>
+  <script src="node_modules/angular-resource/angular-resource.min.js"></script>
+  <script src="ui/appbar/appbar.js"></script>
+  <script src="subjects/node-express/app.js"></script>
+
+  <script src="subjects/node-express/items/items.controller.js"></script>
+  <script src="subjects/node-express/items/items.service.js"></script>
+
+</body>
+
 </html>
